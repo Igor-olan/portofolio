@@ -1,14 +1,12 @@
 import React from "react";
-import Book1 from "../assets/books/book1.jpg";
-import Book2 from "../assets/books/book2.jpg";
-import Book3 from "../assets/books/book3.jpg";
+// import Book1 from "../assets/books/book1.jpg";
 import Vector from "../assets/website/blue-pattern.png";
 
 const Hero = () => {
-  const [imageId, setImageId] = React.useState(Book1);
-  const [title, setTitle] = React.useState("Academy's Undercover Professor");
-  const [description, setDescription] = React.useState(
-    "Machiavelli and Gerrard are just one of the many names the new professor of Ceoren Academy uses to disguise his identity, and now he can add one more to his list, Professor Ludger Cherish. The real Ludger Cherish dies on board a train during a terrorist attack, making him the perfect target for a new identity. Little does the new professor know, Ludger Cherish was involved in something deep and secret. The new Professor Ludger has to be careful to not get caught by the school and the dangerous secret society."
+  // const [imageId] = React.useState(Book1);
+  const [title] = React.useState("Igor Hasiholan");
+  const [description] = React.useState(
+    "I'm a passionate software developer with a strong background in web development and a keen interest in creating innovative solutions. With experience in various programming languages and frameworks, I enjoy tackling complex problems and delivering high-quality results. I thrive in collaborative environments and am always eager to learn and grow as a developer."
   );
 
   const bgImage = {

@@ -2,7 +2,7 @@ import React from "react";
 // import Banner from "../components/Banner/Banner.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Hero from "../components/Hero";
+import Hero from "../components/Profile";
 const App = () => {
 
   React.useEffect(() => {

@@ -2,9 +2,9 @@ import {
   FaDiscord,
   FaFacebook,
   FaGithub,
+  FaInbox,
   FaInstagram,
   FaLinkedin,
-  FaMailchimp
 } from "react-icons/fa";
 
 
@@ -32,12 +32,12 @@ const Footer = () => {
                 <FaLinkedin className="text-3xl" />
               </a>
               <a href="">
-                <Fa className="text-3xl" />
+                <FaInbox className="text-3xl" />
               </a>
               <a href="https://discord.gg/ArDwKCGW">
                 <FaDiscord className="text-3xl" />
               </a>
-              <a href="">
+              <a href="https://github.com/Igor-olan">
                 <FaGithub className="text-3xl" />
               </a>
             </div>
