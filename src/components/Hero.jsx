@@ -1,32 +1,8 @@
 import React from "react";
-import Book1 from "../../assets/books/book1.jpg";
-import Book2 from "../../assets/books/book2.jpg";
-import Book3 from "../../assets/books/book3.jpg";
-import Vector from "../../assets/website/blue-pattern.png";
-
-const ImageList = [
-  {
-    id: 1,
-    img: Book1,
-    title: "Academy's Undercover Professor",
-    description:
-      "Machiavelli and Gerrard are just one of the many names the new professor of Ceoren Academy uses to disguise his identity, and now he can add one more to his list, Professor Ludger Cherish. The real Ludger Cherish dies on board a train during a terrorist attack, making him the perfect target for a new identity. Little does the new professor know, Ludger Cherish was involved in something deep and secret. The new Professor Ludger has to be careful to not get caught by the school and the dangerous secret society.",
-  },
-  {
-    id: 2,
-    img: Book2,
-    title: "The Archmage Restaurant",
-    description:
-      "A man who was reincarnated in another world as a 9th class wizard and retired after saving the continent from a dragon war. He decides to open a small restaurant in the countryside, but his routine is anything but ordinary. On the second floor of his restaurant, there lives a black dragon who has transformed into a woman, named Rurin. She is greedy, cute and loyal to him, but also ignorant and clueless about the human world. They live a fun and warm life, serving customers, solving problems and growing violets in the garden.",
-  },
-  {
-    id: 3,
-    img: Book3,
-    title: "Omniscient Readers Viewpoint",
-    description:
-      "Kim Dokja is a young man leading a simple life, who has been a sole reader of a novel \"Three Ways to Survive in a Ruined World\" for 13 years of his life. As Kim Dokja was reading the novel’s final chapter, reality and the world of fiction started to merge, allowing him to appear at the beginning point of the story. Being the only person who knew how the world could end, Kim Dokja is determined to create a different ending by solving and conquering various challenges, known as scenarios, which are operated by dokkaebi.",
-  },
-];
+import Book1 from "../assets/books/book1.jpg";
+import Book2 from "../assets/books/book2.jpg";
+import Book3 from "../assets/books/book3.jpg";
+import Vector from "../assets/website/blue-pattern.png";
 
 const Hero = () => {
   const [imageId, setImageId] = React.useState(Book1);
@@ -74,7 +50,7 @@ const Hero = () => {
                 {description}
               </p>
             </div>
-            {/* Image section */}
+            {/* Image section
             <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 transition-all duration-300 ease-in-out animate-fade-in">
               <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                 <img
@@ -103,7 +79,7 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

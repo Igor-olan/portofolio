@@ -1,12 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
 // import Banner from "../components/Banner/Banner.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Release from "../components/Update/Release.jsx";
-import Trending from "../components/Trending/Trending.jsx";
-import Genre from "../components/Genre/Genre.jsx";
-
+import Hero from "../components/Hero";
 const App = () => {
 
   React.useEffect(() => {
@@ -21,6 +17,7 @@ const App = () => {
 
   return (
     <div className="bg-white dark:bg-gray-800 dark:text-white duration-200 "> 
+      <Hero />
     </div>
   );
 };

@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Footer from './components/Footer/Footer'
-import Updates from './pages/Updates'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -16,7 +15,6 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/updates" element={<Updates/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,8 +1,6 @@
 import React from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Release from '../components/Update/Release'
-import Schedule from '../components/Update/Schedule'
 
 const Updates = () => {
 
