@@ -12,14 +12,14 @@ import {
 const Navbar = () => {
   return (
     <>
-      <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
-        <div className="container py-3 sm:py-0">
+      <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 w-full">
+        <div className="container py-3 sm:py-0 fixed z-50 bg-white dark:bg-gray-900">
           <div className="flex justify-between items-center">
-            <div className="flex items-center flex-1 justify-end w-full gap-4">
+            <div className="flex items-center flex-1 justify-end w-full">
               <div>
                 <DarkMode />
               </div>
-              <div className="flex items-center flex-1 justify-end w-full gap-4">
+              <div className="flex items-center flex-1 justify-end w-full gap-3">
                 <a href="https://www.instagram.com/igorolan?igsh=bG03NnlzdGJmZGpo">
                   <FaInstagram className="text-3xl" />
                 </a>
