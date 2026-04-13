@@ -1,5 +1,6 @@
 import {
   FaDiscord,
+  FaEnvelope,
   FaFacebook,
   FaGithub,
   FaInbox,
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className=" grid md:grid-cols-3 py-5">
           <div className=" py-8 px-4 dark:text-white">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              Contact Me
+              Hubungi saya
             </h1>
             <br />
             {/* Social Handle */}
@@ -31,8 +32,8 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/igor-hasiholan-43643a339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <FaLinkedin className="text-3xl" />
               </a>
-              <a href="">
-                <FaInbox className="text-3xl" />
+              <a href="olangan4238q@gmail.com">
+                <FaEnvelope className="text-3xl" />
               </a>
               <a href="https://discord.gg/ArDwKCGW">
                 <FaDiscord className="text-3xl" />
