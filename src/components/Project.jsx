@@ -1,32 +1,52 @@
-const Project = () => {
+// import React from "react";
 
-    const projek = [
-        {
-            id: 1,
-            name: "Projek Elist",
-        }
-    ]
+const Projects = () => {
+  const projects = [
+    {
+      name: "Elist API",
+      desc: "REST API untuk manajemen board, list, dan card dengan autentikasi user.",
+    },
+    {
+      name: "Task Manager API",
+      desc: "API sederhana untuk CRUD task dengan struktur database yang rapi dan scalable.",
+    },
+  ];
 
-    return (
-        <div className="min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200">
-            <div className="container pb-8 sm:pb-0 -mt-16">
-                <div
-                  data-aos-once="true"
-                  className="-mt-20 ml-16 flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 transition-all duration-300 ease-in-out animate-fade-in "
-                  >
-                  <h3
-                    data-aos="zoom-out"
-                    data-aos-duration="500"
-                    data-aos-once="true"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-bold"
-                    >
-                    Projek
-                  </h3>
-                </div>
+  return (
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-950">
+      <div className="max-w-6xl mx-auto px-4">
+
+        {/* Title */}
+        <h2
+          data-aos="fade-up"
+          className="text-3xl sm:text-4xl font-bold text-center mb-12"
+        >
+          My Projects
+        </h2>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <h3 className="text-xl font-semibold mb-2">
+                {project.name}
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                {project.desc}
+              </p>
             </div>
-        </div>
-        
-    )
-}
+          ))}
 
-export default Project;
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

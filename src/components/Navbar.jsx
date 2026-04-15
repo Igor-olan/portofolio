@@ -1,43 +1,29 @@
 import DarkMode from "./DarkMode";
-// import { Link } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaGithub
-} from "react-icons/fa";
-
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <>
-      <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 w-full">
-        <div className="container py-3 sm:py-0 fixed z-50 bg-white dark:bg-gray-900">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center flex-1 justify-end w-full">
-              <div>
-                <DarkMode />
-              </div>
-              <div className="flex items-center flex-1 justify-end w-full gap-3">
-                <a href="https://www.instagram.com/igorolan?igsh=bG03NnlzdGJmZGpo">
-                  <FaInstagram className="text-3xl" />
-                </a>
-                <a href="https://www.facebook.com/share/1BCc6Y4yi3/">
-                  <FaFacebook className="text-3xl" />
-                </a>
-                <a href="https://www.linkedin.com/in/igor-hasiholan-43643a339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                  <FaLinkedin className="text-3xl" />
-                </a>
-                <a href="https://github.com/Igor-olan">
-                  <FaGithub className="text-3xl" />
-                </a>
-              </div>
-            </div>  
-          </div>
+    <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 dark:text-white shadow-md">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        
+        {/* Kiri - Brand */}
+        <Link to="/" className="text-2xl font-bold">
+          Igor
+        </Link>
+
+        {/* Kanan - Menu */}
+        <div className="flex items-center gap-6">
+          <Link to="/#projects" className="text-lg hover:text-blue-500 transition">
+            Projects
+          </Link>
+          <Link to="/#contact" className="text-lg hover:text-blue-500 transition">
+            Contact
+          </Link>
+          <DarkMode />
         </div>
+
       </div>
-    </>
+    </div>
   );
 };
 

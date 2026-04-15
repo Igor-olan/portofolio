@@ -3,54 +3,92 @@ import {
   FaEnvelope,
   FaFacebook,
   FaGithub,
-  FaInbox,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
 
-
-
 const Footer = () => {
-
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
-      <section className="container">
-        <div className=" grid md:grid-cols-3 py-5">
-          <div className=" py-8 px-4 dark:text-white">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              Hubungi saya
-            </h1>
-            <br />
-            {/* Social Handle */}
-            <div className="flex items-center gap-3 mt-6">
-              <a href="https://www.instagram.com/igorolan?igsh=bG03NnlzdGJmZGpo">
-                <FaInstagram className="text-3xl" />
-              </a>
-              <a href="https://www.facebook.com/share/1BCc6Y4yi3/">
-                <FaFacebook className="text-3xl" />
-              </a>
-              <a href="https://www.linkedin.com/in/igor-hasiholan-43643a339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <FaLinkedin className="text-3xl" />
-              </a>
-              <a href="olangan4238q@gmail.com">
-                <FaEnvelope className="text-3xl" />
-              </a>
-              <a href="https://discord.gg/ArDwKCGW">
-                <FaDiscord className="text-3xl" />
-              </a>
-              <a href="https://github.com/Igor-olan">
-                <FaGithub className="text-3xl" />
-              </a>
-            </div>
-          </div>
+    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+      
+      <div className="max-w-6xl mx-auto px-4 py-12">
+
+        {/* Title */}
+        <h2 className="text-2xl font-bold mb-8">
+          Hubungi Saya
+        </h2>
+
+        {/* Social List */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/igorolan?igsh=bG03NnlzdGJmZGpo"
+            target="_blank"
+            className="flex items-center gap-3 hover:text-pink-500 transition"
+          >
+            <FaInstagram className="text-3xl" />
+            <span className="text-base">Instagram</span>
+          </a>
+
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/share/1BCc6Y4yi3/"
+            target="_blank"
+            className="flex items-center gap-3 hover:text-blue-600 transition"
+          >
+            <FaFacebook className="text-3xl" />
+            <span className="text-base">Facebook</span>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/igor-hasiholan-43643a339"
+            target="_blank"
+            className="flex items-center gap-3 hover:text-blue-400 transition"
+          >
+            <FaLinkedin className="text-3xl" />
+            <span className="text-base">LinkedIn</span>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:olangan4238q@gmail.com"
+            className="flex items-center gap-3 hover:text-red-400 transition"
+          >
+            <FaEnvelope className="text-3xl" />
+            <span className="text-base">Email</span>
+          </a>
+
+          {/* Discord */}
+          <a
+            href="https://discord.gg/ArDwKCGW"
+            target="_blank"
+            className="flex items-center gap-3 hover:text-indigo-400 transition"
+          >
+            <FaDiscord className="text-3xl" />
+            <span className="text-base">Discord</span>
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/Igor-olan"
+            target="_blank"
+            className="flex items-center gap-3 hover:text-gray-500 transition"
+          >
+            <FaGithub className="text-3xl" />
+            <span className="text-base">GitHub</span>
+          </a>
+
         </div>
-        <div>
-          <div className="text-center py-10 border-t-2 border-gray-300/50 dark:text-white">
-            @copyright 2025 All rights reserved
-          </div>
+
+        {/* Bottom text */}
+        <div className="text-center mt-12 border-t border-gray-300/40 pt-6 text-sm">
+          © 2026 Igor. All rights reserved.
         </div>
-      </section>
-    </div>
+
+      </div>
+    </footer>
   );
 };
 
